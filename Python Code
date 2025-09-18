@@ -1,0 +1,20 @@
+pal = input("Enter your sequence/word here: ")
+
+r=0
+n=0
+i=0
+dummy=len(pal)
+
+while n<len(pal):
+    if pal[i]==pal[dummy-1]:
+        r=1
+        i=i+1
+        dummy-=1
+    n+=1
+    
+
+if r==1:
+ print("the seq is palindrome")
+ 
+else:
+    print("the sequence is not palindrome")
